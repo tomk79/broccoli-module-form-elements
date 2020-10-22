@@ -1,0 +1,26 @@
+{
+    "name": "入力欄リスト",
+    "interface": {
+        "fields": {
+            "inputs": {
+                "fieldType": "loop",
+                "label": "入力欄"
+            }
+        },
+        "subModule": {
+            "inputs": {
+                "fields": {
+                    "label": {
+                        "type": "text",
+                        "label": "ラベル",
+                        "rows": 1
+                    },
+                    "input": {
+                        "fieldType": "module",
+                        "label": "入力欄"
+                    }
+                }
+            }
+        }
+    }
+}

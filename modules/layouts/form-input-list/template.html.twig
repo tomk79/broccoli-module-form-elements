@@ -1,0 +1,15 @@
+<div class="px2-form-input-list"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+	<ul class="px2-form-input-list__ul">
+
+{% for loopRow in inputs %}
+    {{ loopitem_start('inputs') }}
+		<li class="px2-form-input-list__li">
+			<div class="px2-form-input-list__label">{{ loopRow.label }}</div>
+			<div class="px2-form-input-list__input">{{ loopRow.input }}</div>
+		</li>
+    {{ loopitem_end() }}
+{% endfor %}
+{{ appender('inputs') }}
+
+	</ul>
+</div>
