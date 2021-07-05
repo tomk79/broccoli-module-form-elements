@@ -11,6 +11,7 @@
             "inputs": {
                 "fields": {
                     "label": {
+                        "fieldType": "input",
                         "type": "text",
                         "label": "ラベル",
                         "rows": 1

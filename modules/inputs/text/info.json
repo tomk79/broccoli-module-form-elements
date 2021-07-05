@@ -1,3 +1,51 @@
 {
-    "name": "テキスト - Text"
+    "name": "テキスト入力欄 - Text Input",
+    "interface": {
+        "fields": {
+            "type": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "タイプ",
+                "options": [
+                    {
+                        "label": "テキスト",
+                        "value": "text"
+                    },
+                    {
+                        "label": "パスワード",
+                        "value": "password"
+                    }
+                ]
+            },
+            "name": {
+                "fieldType": "input",
+                "type": "html_attr_text",
+                "label": "name属性",
+                "rows": 1
+            },
+            "size": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "大きさ",
+                "options": [
+                    {
+                        "label": "指定なし",
+                        "value": ""
+                    },
+                    {
+                        "label": "100%",
+                        "value": "100%"
+                    },
+                    {
+                        "label": "75%",
+                        "value": "75%"
+                    },
+                    {
+                        "label": "50%",
+                        "value": "50%"
+                    }
+                ]
+            }
+        }
+    }
 }

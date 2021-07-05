@@ -1,0 +1,39 @@
+.px2-form-submit-area {
+    margin: 1em 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &__btns,
+    &__backward-btns {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        padding: 0;
+        > li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+    }
+
+	@media all and (max-width: 544px){
+        flex-direction: column;
+
+        &__btns,
+        &__backward-btns {
+            flex-direction: column;
+            > li {
+                margin: 0.2em auto;
+            }
+        }
+
+        &__backward-btns {
+            margin-top: 1em;
+            > li {
+                margin: 0.2em auto 0.2em 0;
+            }
+        }
+    }
+}

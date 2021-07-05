@@ -1,0 +1,11 @@
+{
+    "name": "フォーム",
+    "interface": {
+        "fields": {
+            "contents": {
+                "fieldType": "module",
+                "label": "フォームの内容"
+            }
+        }
+    }
+}

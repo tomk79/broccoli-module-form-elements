@@ -1,0 +1,3 @@
+<div{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+    <input type="{{ type }}" name="{{ name }}" value="" class="px2-input"{% if _ENV.vars.size %} style="width:{{ size }};"{% endif %} />
+</div>

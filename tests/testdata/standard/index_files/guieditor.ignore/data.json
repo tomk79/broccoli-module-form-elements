@@ -5,129 +5,213 @@
             "fields": {
                 "main": [
                     {
-                        "modId": "pickles2:layouts/form-input-list",
+                        "modId": "pickles2:layouts/form",
                         "fields": {
-                            "inputs": [
+                            "contents": [
                                 {
                                     "modId": "pickles2:layouts/form-input-list",
                                     "fields": {
-                                        "label": "入力欄1",
-                                        "input": [
+                                        "inputs": [
                                             {
-                                                "modId": "std-document:basics/text",
+                                                "modId": "pickles2:layouts/form-input-list",
                                                 "fields": {
-                                                    "main": {
-                                                        "src": "ここにはフォームの入力欄を挿入します。\n",
-                                                        "editor": "markdown"
-                                                    },
-                                                    "paragraph": "px2-p",
-                                                    "text-align": "",
-                                                    "font-size": ""
+                                                    "label": "入力欄1",
+                                                    "input": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "ここにはフォームの入力欄を挿入します。\n",
+                                                                    "editor": "markdown"
+                                                                },
+                                                                "paragraph": "px2-p",
+                                                                "text-align": "",
+                                                                "font-size": ""
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        },
+                                                        {
+                                                            "modId": "pickles2:inputs/text",
+                                                            "fields": {
+                                                                "type": {
+                                                                    "src": "text"
+                                                                },
+                                                                "name": {
+                                                                    "src": ""
+                                                                },
+                                                                "size": {
+                                                                    "src": "75%"
+                                                                }
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
                                                 },
+                                                "subModName": "inputs",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "pickles2:layouts/form-input-list",
+                                                "fields": {
+                                                    "label": "ラベル",
+                                                    "input": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "ここにはフォームの入力欄を挿入します。\n",
+                                                                    "editor": "markdown"
+                                                                },
+                                                                "paragraph": "px2-p",
+                                                                "text-align": "",
+                                                                "font-size": ""
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        },
+                                                        {
+                                                            "modId": "pickles2:inputs/text",
+                                                            "fields": {
+                                                                "type": {
+                                                                    "src": "password"
+                                                                },
+                                                                "name": {
+                                                                    "src": "passwd"
+                                                                },
+                                                                "size": {
+                                                                    "src": "50%"
+                                                                }
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "subModName": "inputs",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "pickles2:layouts/form-input-list",
+                                                "fields": {
+                                                    "label": "入力欄2",
+                                                    "input": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "ここにはフォームの入力欄を挿入します。\n",
+                                                                    "editor": "markdown"
+                                                                },
+                                                                "paragraph": "px2-p",
+                                                                "text-align": "",
+                                                                "font-size": ""
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "subModName": "inputs",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "pickles2:layouts/form-input-list",
+                                                "fields": {
+                                                    "label": "ここにも入力欄",
+                                                    "input": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "ここにはフォームの入力欄を挿入します。\n",
+                                                                    "editor": "markdown"
+                                                                },
+                                                                "paragraph": "px2-p",
+                                                                "text-align": "",
+                                                                "font-size": ""
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "subModName": "inputs",
                                                 "anchor": "",
                                                 "dec": ""
                                             }
                                         ]
+                                    }
+                                },
+                                {
+                                    "modId": "std-document:basics/button",
+                                    "fields": {
+                                        "label": {
+                                            "src": "フォームを送信する"
+                                        },
+                                        "intention": {
+                                            "src": "px2-btn--primary"
+                                        },
+                                        "sizing": {
+                                            "src": ""
+                                        },
+                                        "display": {
+                                            "src": ""
+                                        },
+                                        "btntype": {
+                                            "src": "submit"
+                                        },
+                                        "onclick": {
+                                            "src": "alert('送信しました。');",
+                                            "lang": "javascript"
+                                        },
+                                        "paragraph": {
+                                            "src": "px2-p"
+                                        },
+                                        "align": {
+                                            "src": "center"
+                                        }
                                     },
-                                    "subModName": "inputs",
                                     "anchor": "",
                                     "dec": ""
                                 },
                                 {
-                                    "modId": "pickles2:layouts/form-input-list",
+                                    "modId": "pickles2:layouts/form-submit-area",
                                     "fields": {
-                                        "label": "ラベル",
-                                        "input": [
+                                        "submit_btns": [
                                             {
-                                                "modId": "std-document:basics/text",
+                                                "modId": "pickles2:layouts/form-submit-area",
                                                 "fields": {
-                                                    "main": {
-                                                        "src": "ここにはフォームの入力欄を挿入します。\n",
-                                                        "editor": "markdown"
-                                                    },
-                                                    "paragraph": "px2-p",
-                                                    "text-align": "",
-                                                    "font-size": ""
+                                                    "label": {
+                                                        "src": "送信します"
+                                                    }
                                                 },
+                                                "subModName": "submit_btns",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ],
+                                        "backward_btns": [
+                                            {
+                                                "modId": "pickles2:layouts/form-submit-area",
+                                                "fields": {
+                                                    "label": {
+                                                        "src": "キャンセル"
+                                                    }
+                                                },
+                                                "subModName": "backward_btns",
                                                 "anchor": "",
                                                 "dec": ""
                                             }
                                         ]
-                                    },
-                                    "subModName": "inputs",
-                                    "anchor": "",
-                                    "dec": ""
-                                },
-                                {
-                                    "modId": "pickles2:layouts/form-input-list",
-                                    "fields": {
-                                        "label": "入力欄2",
-                                        "input": [
-                                            {
-                                                "modId": "std-document:basics/text",
-                                                "fields": {
-                                                    "main": {
-                                                        "src": "ここにはフォームの入力欄を挿入します。\n",
-                                                        "editor": "markdown"
-                                                    },
-                                                    "paragraph": "px2-p",
-                                                    "text-align": "",
-                                                    "font-size": ""
-                                                },
-                                                "anchor": "",
-                                                "dec": ""
-                                            }
-                                        ]
-                                    },
-                                    "subModName": "inputs",
-                                    "anchor": "",
-                                    "dec": ""
-                                },
-                                {
-                                    "modId": "pickles2:layouts/form-input-list",
-                                    "fields": {
-                                        "label": "ここにも入力欄",
-                                        "input": [
-                                            {
-                                                "modId": "std-document:basics/text",
-                                                "fields": {
-                                                    "main": {
-                                                        "src": "ここにはフォームの入力欄を挿入します。\n",
-                                                        "editor": "markdown"
-                                                    },
-                                                    "paragraph": "px2-p",
-                                                    "text-align": "",
-                                                    "font-size": ""
-                                                },
-                                                "anchor": "",
-                                                "dec": ""
-                                            }
-                                        ]
-                                    },
-                                    "subModName": "inputs",
-                                    "anchor": "",
-                                    "dec": ""
+                                    }
                                 }
                             ]
                         }
-                    },
-                    {
-                        "modId": "std-document:basics/button",
-                        "fields": {
-                            "label": "フォームを送信する",
-                            "intention": "px2-btn--primary",
-                            "sizing": "",
-                            "display": "",
-                            "btntype": "submit",
-                            "onclick": {
-                                "src": "alert('送信しました。');",
-                                "lang": "javascript"
-                            },
-                            "paragraph": "px2-p",
-                            "align": "center"
-                        },
-                        "anchor": "",
-                        "dec": ""
                     }
                 ]
             },

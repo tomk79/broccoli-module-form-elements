@@ -1,17 +1,61 @@
-// Utilities
+input[type=text].px2-input,
+input[type=password].px2-input,
+input[type=number].px2-input,
+input[type=search].px2-input,
+input[type=tel].px2-input,
+input[type=url].px2-input,
+input[type=email].px2-input,
+input[type=datetime].px2-input,
+input[type=date].px2-input,
+input[type=month].px2-input,
+input[type=week].px2-input,
+input[type=time].px2-input,
+input[type=color].px2-input,
+input[type=file].px2-input,
+input[type=datetime-local].px2-input,
+textarea.px2-input,
+select.px2-input{
+    display: inline-block;
+    box-sizing: border-box;
+    width: auto;
+    min-width: 50px;
+    max-width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    color: var(--px2-text-color);
+    background-color: var(--px2-background-color);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:focus{
+        color: #333;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    }
+    &[readonly]{
+        background-color: #eee;
+        &:focus{
+            border-color: #ced4da;
+            box-shadow: none;
+        }
+    }
+    &[disabled]{
+        color: #8e959c;
+        background-color: #eee;
+    }
+    &--block{
+        display: block;
+        width: 100%;
+    }
 
-// Links
-.px2-a {
-	&:before {
-		content:' ';
-		width:0;
-		height:0;
-		display: inline-block;
-		margin-right: 0.2em;
-		border-width:0.35em 0 0.35em 0.6em;
-		border-style:solid;
-		border-color:#00a0e6;
-		border-top-color:transparent;
-		border-bottom-color:transparent;
-	}
+    &--error {
+        border-color: #721c24;
+        color: #721c24;
+        background-color: #f8d7da;
+    }
 }

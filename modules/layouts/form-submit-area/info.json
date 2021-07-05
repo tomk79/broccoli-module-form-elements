@@ -1,0 +1,37 @@
+{
+    "name": "送信ボタンエリア",
+    "interface": {
+        "fields": {
+            "submit_btns": {
+                "fieldType": "loop",
+                "label": "送信系ボタン"
+            },
+            "backward_btns": {
+                "fieldType": "loop",
+                "label": "キャンセル系ボタン"
+            }
+        },
+        "subModule": {
+            "submit_btns": {
+                "fields": {
+                    "label": {
+                        "fieldType": "input",
+                        "type": "text",
+                        "label": "ラベル",
+                        "rows": 1
+                    }
+                }
+            },
+            "backward_btns": {
+                "fields": {
+                    "label": {
+                        "fieldType": "input",
+                        "type": "text",
+                        "label": "ラベル",
+                        "rows": 1
+                    }
+                }
+            }
+        }
+    }
+}
