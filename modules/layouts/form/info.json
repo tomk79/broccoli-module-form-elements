@@ -2,6 +2,27 @@
     "name": "フォーム",
     "interface": {
         "fields": {
+            "action": {
+                "fieldType": "input",
+                "type": "html_attr_text",
+                "label": "送信先",
+                "rows": 1
+            },
+            "method": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "メソッド",
+                "options": [
+                    {
+                        "label": "POST",
+                        "value": "POST"
+                    },
+                    {
+                        "label": "GET",
+                        "value": "GET"
+                    }
+                ]
+            },
             "contents": {
                 "fieldType": "module",
                 "label": "フォームの内容"

@@ -5,6 +5,26 @@
             "fields": {
                 "main": [
                     {
+                        "modId": "std-document:basics/text",
+                        "fields": {
+                            "main": {
+                                "src": "ウェブページにフォームを設置します。",
+                                "editor": "markdown"
+                            },
+                            "paragraph": {
+                                "src": "px2-p"
+                            },
+                            "text-align": {
+                                "src": ""
+                            },
+                            "font-size": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
                         "modId": "pickles2:layouts/form",
                         "fields": {
                             "contents": [
@@ -210,8 +230,16 @@
                                         ]
                                     }
                                 }
-                            ]
-                        }
+                            ],
+                            "action": {
+                                "src": "?"
+                            },
+                            "method": {
+                                "src": "POST"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
                     }
                 ]
             },
