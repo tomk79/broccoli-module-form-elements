@@ -1,8 +1,9 @@
-.px2-form-input-list{
+.px2-form-input-list {
 	margin-top: 1em;
 	margin-bottom: 1em;
+	container-type: inline-size;
 
-	ul.px2-form-input-list__ul{
+	ul.px2-form-input-list__ul {
 		display: table;
 		border-collapse: collapse;
 		width: 100%;
@@ -11,13 +12,13 @@
 		margin: 0;
 		padding: 0;
 
-		li.px2-form-input-list__li{
+		li.px2-form-input-list__li {
 			display: table-row;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 
-			.px2-form-input-list__label{
+			.px2-form-input-list__label {
 				display: table-cell;
                 vertical-align: top;
 				background-color: #e7e7e7;
@@ -26,7 +27,7 @@
 				width: 30%;
 				border: 1px solid #999999;
 			}
-			.px2-form-input-list__input{
+			.px2-form-input-list__input {
 				display: table-cell;
                 vertical-align: top;
                 background-color: var(--px2-background-color);
@@ -40,7 +41,7 @@
 			}
 
             &--required {
-                .px2-form-input-list__label{
+                .px2-form-input-list__label {
                     &::after {
                         content: "*";
                         color: #e11;
@@ -48,11 +49,11 @@
                         margin: 0 0 0 0.7em;
                     }
                 }
-                .px2-form-input-list__input{
+                .px2-form-input-list__input {
                 }
             }
             &--error {
-                .px2-form-input-list__label{
+                .px2-form-input-list__label {
                     color: #721c24;
                     &::before {
                         content: "!!!";
@@ -60,21 +61,21 @@
                         margin: 0 0.7em 0 0;
                     }
                 }
-                .px2-form-input-list__input{
+                .px2-form-input-list__input {
                 }
             }
 		}
 	}
 
-	@media all and (max-width: 544px){
-		ul.px2-form-input-list__ul{
+	@container (max-width: 544px) {
+		ul.px2-form-input-list__ul {
 			display: block;
 			border-bottom: 0 none;
 
-			li.px2-form-input-list__li{
+			li.px2-form-input-list__li {
 				display: block;
 
-				.px2-form-input-list__label{
+				.px2-form-input-list__label {
 					display: block;
 					border-left: 0 none;
 					border-top: 0 none;
@@ -82,7 +83,7 @@
 					padding: 0.4em 1em;
 					width: auto;
 				}
-				.px2-form-input-list__input{
+				.px2-form-input-list__input {
 					display: block;
 					border-left: 0 none;
 					border-top: 0 none;
