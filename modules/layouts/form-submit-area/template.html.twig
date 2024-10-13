@@ -1,18 +1,20 @@
 <div class="px2-form-submit-area"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
-	<ul class="px2-form-submit-area__btns">
+	<div class="px2-form-submit-area__inner">
+		<ul class="px2-form-submit-area__btns">
 {% for loopRow in submit_btns %}
     {{ loopitem_start('submit_btns') }}
-		<li><button class="px2-btn px2-btn--primary">{{ loopRow.label }}</button></li>
+			<li><button class="px2-btn px2-btn--primary">{{ loopRow.label }}</button></li>
     {{ loopitem_end() }}
 {% endfor %}
 {{ appender('submit_btns') }}
-	</ul>
-	<ul class="px2-form-submit-area__backward-btns">
+		</ul>
+		<ul class="px2-form-submit-area__backward-btns">
 {% for loopRow in backward_btns %}
     {{ loopitem_start('backward_btns') }}
-		<li><button class="px2-btn px2-btn--secondary">{{ loopRow.label }}</button></li>
+			<li><button class="px2-btn px2-btn--secondary">{{ loopRow.label }}</button></li>
     {{ loopitem_end() }}
 {% endfor %}
 {{ appender('backward_btns') }}
-	</ul>
+		</ul>
+	</div>
 </div>

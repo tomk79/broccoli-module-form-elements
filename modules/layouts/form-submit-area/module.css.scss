@@ -1,39 +1,45 @@
 .px2-form-submit-area {
-    margin: 1em 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+	margin: 1em 0;
+	padding: 0;
 
-    &__btns,
-    &__backward-btns {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 0;
-        padding: 0;
-        > li {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-    }
+	&__inner {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
 
-	@media all and (max-width: 544px){
-        flex-direction: column;
+	&__btns,
+	&__backward-btns {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0;
+		padding: 0;
+		> li {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+	}
 
-        &__btns,
-        &__backward-btns {
-            flex-direction: column;
-            > li {
-                margin: 0.2em auto;
-            }
-        }
+	@container (max-width: 544px){
 
-        &__backward-btns {
-            margin-top: 1em;
-            > li {
-                margin: 0.2em auto 0.2em 0;
-            }
-        }
-    }
+		&__inner {
+			flex-direction: column;
+		}
+
+		&__btns,
+		&__backward-btns {
+			flex-direction: column;
+			> li {
+				margin: 0.2em auto;
+			}
+		}
+
+		&__backward-btns {
+			margin-top: 1em;
+			> li {
+				margin: 0.2em auto 0.2em 0;
+			}
+		}
+	}
 }
